@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name examenVacanteApp.controller:AboutCtrl
+ * @name examenVacanteApp.controller:TransaccionesCtrl
  * @description
- * # AboutCtrl
+ * # TransaccionesCtrl
  * Controller of the examenVacanteApp
  */
 angular.module('examenVacanteApp')
-  .controller('AboutCtrl', function () {
+  .controller('TransaccionesCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

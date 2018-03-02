@@ -11,7 +11,6 @@ body {
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
   padding-left: 15px;
   padding-right: 15px;
@@ -40,24 +39,250 @@ body {
 .container-narrow > hr {
   margin: 30px 0;
 }
+/*Styles sandy*/
+/*nav bar*/
+.navbar-header{
+  height: 80px;
+}
+.navbar-brand {
+  float: left;
+  height: 80px;
+ padding: 0px;
+  font-size: 18px;
+  line-height: 20px;
+}
+.navbar-nav > li > a {
+  font-size: 16px;
+  padding-top: 30px;
+  padding-bottom: 5px;
+ vertical-align: middle;
+}
+ .navbar-nav > li > a:focus {
+  color: #000;
+  font-weight: 700;
+  background: rgb(237, 235, 235);
+  border-bottom: 3px solid #019dd6;
+}
+/*nav derecha*/
+.navbar-login{
+    width: 350px;
+    padding: 10px;
+}
+/*navbar main*/
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  color: #555 !important;;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+.nav-tabs > li > a{
+  background: #0072b1;
+  color: #fff !important;
+  margin-right: 0px;
+  line-height: 1.42857143;
+  border-right: .5px solid #62acd4;
+  border-radius:  0;
+}
+.nav-tabs > li > a:focus{
+  color:#0072b1 !important;
+}
+.nav-tabs > li > a:hover{
+  color:#0072b1 !important;
+}
+/*imagenes*/
+.img-logo{
+  width: 190px;
+  margin:0px;
+  padding: 0px;
+}
+/*iconos*/
+.colorB{
+  color: #29a6dc;
+}
+.colorR{
+  color: #d9534f;
+}
+.active{
+color: #22b074;
+}
+/*Text*/
+.f18{
+  font-size: 16px;
+  }
+.f16{
+font-size: 16px;
+}
+/*botones*/
+.btnUno{
+  background: #0072b1;
+  color:#fff; 
+  width: 30%;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: 0 !important;
+}
+.btnUno:hover ,.btnUno:focus{
+  color:#fff !important; 
+  background: #026ba3;
+}
+.btnDos{
+  display: inline-block;
+  background: #004667;
+  color:#fff; 
+  width: 30%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  padding-left: 10px;
+  outline: 0 !important;
+}
+.btnDos:hover , .btnDos:focus{
+  color:#fff; 
+}
+.btn-Pag{
+  height: 30px;
+outline: 0;
+background: #29a6dc;
+color: #fff;
+}
+.btn-Pag1{
+  height: 30px;
+  outline: 0;
+  background: #fff;
+  color:  #29a6dc;
+  }
+  .btn-Pag1:focus{
+    height: 30px;
+    outline: 0;
+    background: #29a6dc;
+color: #fff;
+    }
+/*margin y padding*/
+.mt100{
+margin-top: 100px;
+}
+.p50{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/*back*/
+.backAzul{
+  background:#004667;
+}
+/* custom checkboxes */
 
-/* Main marketing message and sign up button */
-.jumbotron {
-  text-align: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-.jumbotron .btn {
-  font-size: 21px;
-  padding: 14px 24px;
+.custom-checkbox>[type="checkbox"],
+.custom-checkbox>label {
+    margin-top: 15px !important;
+    margin-bottom: 10px !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
-/* Supporting marketing content */
-.marketing {
-  margin: 40px 0;
+.custom-checkbox>[type="checkbox"]:not(:checked),
+.custom-checkbox>[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
 }
-.marketing p + h4 {
-  margin-top: 28px;
+
+.custom-checkbox>[type="checkbox"]:not(:checked)+label,
+.custom-checkbox>[type="checkbox"]:checked+label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    color: #53a0d6;
+    font-size: 14px;
 }
+
+.custom-checkbox>[type="checkbox"]:not(:checked)+label:before,
+.custom-checkbox>[type="checkbox"]:checked+label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -12px;
+    width: 23px;
+    height: 23px;
+    border: 1px solid #adc8db;
+    background: #ffffff;
+    border-radius: 2px;
+}
+
+.custom-checkbox>[type="checkbox"]:not(:checked)+label:after,
+.custom-checkbox>[type="checkbox"]:checked+label:after {
+    font: normal normal normal 14px/1 FontAwesome;
+    content: '\f00c';
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 4px;
+    color: #0094f1;
+    transition: all .2s;
+}
+
+.custom-checkbox>[type="checkbox"]:not(:checked)+label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.custom-checkbox>[type="checkbox"]:checked+label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.custom-checkbox>[type="checkbox"][data-indeterminate]+label:after,
+.custom-checkbox>[type="checkbox"][data-indeterminate]+label:after {
+    content: '\f068';
+    left: 6px;
+    opacity: 1;
+    transform: scale(1);
+}
+
+.custom-checkbox>[type="checkbox"]:disabled:not(:checked)+label:before,
+.custom-checkbox>[type="checkbox"]:disabled:checked+label:before {
+    box-shadow: none;
+    background-color: #eeeeee;
+    border-color: #eeeeee;
+    cursor: not-allowed;
+    opacity: 1;
+    color: #dadada;
+}
+
+.custom-checkbox>[type="checkbox"]:disabled:checked+label:after {
+    color: #dadada;
+    cursor: not-allowed;
+}
+
+.custom-checkbox>[type="checkbox"]:disabled+label {
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+.custom-checkbox>[type="checkbox"]:checked:focus+label:before,
+.custom-checkbox>[type="checkbox"]:not(:checked):focus+label:before {
+    border: 1px solid #337ab7;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+.custom-checkbox>label:hover:before {
+    border: 1px solid #337ab7 !important;
+}
+
+.custom-checkbox>[type="checkbox"]:disabled:not(:checked)+label:hover:before,
+.custom-checkbox>[type="checkbox"]:disabled:checked+label:hover:before {
+    border: 1px solid #337ab7 !important;
+}
+
+
+
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -67,7 +292,6 @@ body {
 
   /* Remove the padding we set earlier */
   .header,
-  .marketing,
   .footer {
     padding-left: 0;
     padding-right: 0;
@@ -76,8 +300,5 @@ body {
   .header {
     margin-bottom: 30px;
   }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+ 
 }
